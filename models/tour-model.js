@@ -178,7 +178,7 @@ tourSchema.pre(/^find/, function (next) {
 // });
 
 tourSchema.post(/^find/, function (doc, next) {
-  console.log(`query took ${Date.now() - this.start}`);
+  // console.log(`query took ${Date.now() - this.start}`);
   next();
 });
 

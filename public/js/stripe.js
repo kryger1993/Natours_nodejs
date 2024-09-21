@@ -12,14 +12,12 @@ export const bookTour = async (tourId) => {
     const session = await axios(
       `${location.protocol}//${location.host}/api/v1/bookings/checkout-session/${tourId}`
       );
-      console.log(session);
 
       //2) create checkout form + charge cc
       await stripe.redirectToCheckout({
         sessionId: session.data.session.id
       })
     }catch (err) {
-      console.log(err);
       showAlert('error', err);
     }
 };

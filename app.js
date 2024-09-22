@@ -44,7 +44,7 @@ app.use(
         "'self'",
         'http://localhost:3000',
         'ws://localhost:*',
-        'wss://natours-ef.onrender.com/*'
+        'wss://natours-ef.onrender.com:*/*'
       ],
       'frame-src': ['https://js.stripe.com/']
     }

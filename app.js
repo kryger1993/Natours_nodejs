@@ -40,7 +40,12 @@ app.use(
         'https://js.stripe.com/v3/'
       ],
       'img-src': ["'self'", 'data:', 'https://*.tile.openstreetmap.org'],
-      'connect-src': ["'self'", 'http://localhost:3000', 'ws://localhost:*'],
+      'connect-src': [
+        "'self'",
+        'http://localhost:3000',
+        'ws://localhost:*',
+        'wss://natours-ef.onrender.com/*'
+      ],
       'frame-src': ['https://js.stripe.com/']
     }
   })
